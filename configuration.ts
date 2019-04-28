@@ -31,6 +31,6 @@ export let config : Config = {
    suites :
    {
       smoke : ['chainlocators.js','Demo.js'],
-      regression : 'Demo.js'
+      //regression : 'Demo.js'
    }
   };
