@@ -1,0 +1,27 @@
+{
+  "name": "frameworkts",
+  "version": "1.0.0",
+  "description": "Framework for Protractor with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor JSFiles/configuration.js",
+    "smoke": "protractor JSFiles/configuration.js --suite smoke",
+    "pretest": "tsc",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "start": "npm run webdriver-update && npm run test"
+  },
+  "author": "Suresh",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^5.4.2",
+    "typescript": "~3.4.5",
+    "jasmine": "~3.4.0",
+    "@types/jasmine": "~3.3.12",
+    "@types/jasminewd2": "~2.0.6",
+    "ts-node": "~8.1.0",
+    "@types/node": "~11.13.7",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor-jasmine2-html-reporter": "^0.0.7"
+  }
+}
